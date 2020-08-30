@@ -1,6 +1,15 @@
 language: scala
+
+jdk: openjdk8
+
 scala:
   - 2.12.4
 
 script:
   - sbt ++$TRAVIS_SCALA_VERSION test
+
+cache:
+  directories:
+    - $HOME/.cache/coursier
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt
