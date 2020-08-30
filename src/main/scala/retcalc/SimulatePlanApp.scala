@@ -24,7 +24,6 @@ object SimulatePlanApp extends App {
       case Right((capitalAtRetirement, capitalAfterDeath)) =>
         s"""
            |Capital after $nbOfYearsSaving years of savings:    ${capitalAtRetirement.round}
-
            |Capital after $nbOfYearsInRetirement years in retirement: ${capitalAfterDeath.round}
         """.stripMargin
 
